@@ -8,9 +8,17 @@ Welcome to Chaosinventory's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Features
+   :glob:
 
+   features/*
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Development
+   :glob:
+
+   dev/*
 
 Indices and tables
 ==================

@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Chaosinventory'
-copyright = '2020, Chaosinventory Team'
+copyright = 'Chaosinventory Team, AGPL license'
 author = 'Chaosinventory Team'
 
 

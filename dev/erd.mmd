@@ -80,6 +80,8 @@ erDiagram
       text note
       boolean active
     }
+    OVERLAY }o--o| OVERLAY : parent
+    
     OVERLAY-ITEM }o--|| OVERLAY : overlay
     OVERLAY-ITEM }o--|| ITEM : item
     OVERLAY-ITEM }o--o| LOCATION : in-location

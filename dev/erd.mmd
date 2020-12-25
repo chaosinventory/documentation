@@ -1,3 +1,49 @@
 erDiagram
-    ITEM
-    COLLECTION
+    LOCATION {
+      string name
+      text note
+    }
+    ASSET {
+      string name
+      text note
+    }
+    ASSET-TAG {
+      string name
+    }
+    ASSET-TAG }o--o{ ASSET : tag
+    ITEM {
+      uint amount
+    }
+    ASSET-DATA-TYPE {
+      string name
+    }
+    ASSET-DATA {
+      text value
+    }
+    ASSET-DATA }o--|| ASSET-DATA-TYPE : type
+    ASSET-DATA }o--|| ASSET : asset-data
+    ITEM }o--|| ASSET : asset
+    ITEM }o--o| LOCATION : location
+    ITEM }o--o| ITEM : parent
+    ITEM-TAG {
+      string name
+    }
+    ITEM-TAG }o--o{ ITEM : tag
+    INVENTORY-ID-SCHEMA {
+      string name
+    }
+    INVENTORY-ID {
+      string value
+    }
+    INVENTORY-ID }o--|| INVENTORY-ID-SCHEMA : schema
+    INVENTORY-ID }o--|| ITEM : iventory-id
+    EVENT {
+      string name
+      date from
+      date to
+      boolean active
+    }
+    EVENT-ITEM-OVERLAY }o--|| EVENT : event
+    EVENT-ITEM-OVERLAY }o--|| ITEM : item
+    EVENT-ITEM-OVERLAY }o--o| LOCATION : location
+    EVENT-ITEM-OVERLAY }o--o| ITEM : parent

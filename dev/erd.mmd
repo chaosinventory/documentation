@@ -1,3 +1,88 @@
 erDiagram
-    ITEM
-    COLLECTION
+    ENTITY {
+      string name
+      text note
+    }
+    LOCATION {
+      string name
+      text note
+    }
+    PRODUCT {
+      string name
+      text note
+    }
+    ITEM {
+      string name
+      text note
+      uint amount
+    }
+
+    ENTITY }o--o| ENTITY : part-of
+
+    LOCATION }o--o| ENTITY : belongs-to
+    LOCATION }o--o| LOCATION: in-location
+
+    ITEM }o--o| ENTITY : belongs-to
+    ITEM }o--o| LOCATION : in-location
+    ITEM }o--o| LOCATION : current-location
+    ITEM }o--|| PRODUCT : product
+    ITEM }o--o| ITEM : in-item
+    ITEM }o--o| ITEM : current-item
+
+    TAG {
+      string name
+    }
+    TAG }o--o| TAG : parent
+    TAG }o--o{ ENTITY : tag
+    TAG }o--o{ LOCATION : tag
+    TAG }o--o{ PRODUCT : tag
+    TAG }o--o{ ITEM : tag
+
+    DATA-TYPE {
+      string name
+      text note
+    }
+
+    ENTITY-DATA {
+      text value
+    }
+    ENTITY-DATA }o--|| DATA-TYPE : type
+    ENTITY-DATA }o--|| ENTITY : entity
+    LOCATION-DATA {
+      text value
+    }
+    LOCATION-DATA }o--|| DATA-TYPE : type
+    LOCATION-DATA }o--|| LOCATION : location
+    PRODUCT-DATA {
+      text value
+    }
+    PRODUCT-DATA }o--|| DATA-TYPE : type
+    PRODUCT-DATA }o--|| PRODUCT : product
+    ITEM-DATA {
+      text value
+    }
+    ITEM-DATA }o--|| DATA-TYPE : type
+    ITEM-DATA }o--|| ITEM : item
+
+    INVENTORY-ID-SCHEMA {
+      string name
+      text note
+    }
+    INVENTORY-ID {
+      string value
+    }
+    INVENTORY-ID }o--|| INVENTORY-ID-SCHEMA : schema
+    INVENTORY-ID }o--|| ITEM : iventory-id
+    INVENTORY-ID }o--|| PRODUCT : inventory-id
+
+    OVERLAY {
+      string name
+      text note
+      boolean active
+    }
+    OVERLAY }o--o| OVERLAY : parent
+    
+    OVERLAY-ITEM }o--|| OVERLAY : overlay
+    OVERLAY-ITEM }o--|| ITEM : item
+    OVERLAY-ITEM }o--o| LOCATION : in-location
+    OVERLAY-ITEM }o--o| ITEM : in-item

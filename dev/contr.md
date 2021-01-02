@@ -1,6 +1,6 @@
 # Contributing
 
-All contributions must be made via a Pull Request to the main GitHub-Repo.
+All contributions must be made via a Pull Request to the main GitHub-Repository.
 
 For a pull request to get merged, the following conditions must be fulfilled:
 

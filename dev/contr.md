@@ -8,7 +8,7 @@ For a pull request to get merged, the following conditions must be fulfilled:
 - at least two approvals must be made for the patch to be merged after 24 hours, or at least four approvals must be made to merge the patch immediately
 - the PR must neither be controversial or blocked (indicated by tags)
 
-**Fundamental changes, like changes in the database scheme or other disputed areas, require at least four reviews. Those changes should be discussed in a developer meeting. A "Fundamental"-Tag should indicate those changes.**
+**Fundamental changes, like changes in the database scheme or other disputed areas, require at least four reviews. Those changes should be discussed in a development meeting. A "Fundamental"-Tag should indicate those changes.**
 
 The Documentation may be also expanded using pull requests. For the documentation repository, two approvals are enough for immediate merge.
 

@@ -20,6 +20,8 @@
 project = 'Chaosinventory'
 copyright = 'Chaosinventory Team, AGPL license'
 author = 'Chaosinventory Team'
+html_logo = '_static/logo/logo_128x128.png'
+html_favicon = '_static/logo/favicon.ico'
 
 
 # -- General configuration ---------------------------------------------------

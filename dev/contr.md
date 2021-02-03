@@ -15,5 +15,5 @@ For a pull request to get merged, the following conditions must be fulfilled:
 The Documentation may be also expanded using pull requests (PRs). Pull requests need need to follow a few guidelines:
 
 - A PR may be merged immediately with a minimum of only two approvals.
-- Multiple commyits should be squashed before or during merging, except where it would impact comprehensibility.
+- Multiple commits should be squashed before or during merging, except where it would impact comprehensibility.
 - PRs require a meaningful title and, if needed to explain the changes or the rational behind them, a proper description.

@@ -5,7 +5,9 @@ All contributions must be made via a Pull Request to the main GitHub-Repository.
 For a pull request to get merged, the following conditions must be fulfilled:
 
 - all applicable pipelines must succeed
-- at least two approvals are needed for the patch to be merged after 24 hours, or at least four approvals  to merge the patch immediately
+- merging has to be done by a different person than the one submitting the patch
+- it must not be merged until 48h after submission
+- at least two approvals are needed to merge the patch immediately
 - the PR must neither be controversial or blocked (indicated by tags)
 
 **Fundamental changes, like changes in the database scheme or other disputed areas, require at least four reviews. Those changes should be discussed in a development meeting. A "Fundamental"-Tag should indicate those changes.**

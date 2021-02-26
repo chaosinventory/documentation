@@ -20,6 +20,9 @@ Welcome to Chaosinventory's documentation!
 
    dev/*
 
+.. note::
+   This is Chaosinventory User Documentation. The documentation for developers and instance administrators is available under https://chaosinventory.readthedocs.io/projects/core/.
+
 Indices and tables
 ==================
 
